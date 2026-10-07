@@ -6,11 +6,19 @@ body {
 }
 
 h1 {
-    color: #0f84e3;
+    color: #40a8ce;
 }
 
 p {
     color: #d941a1;
     font-size: 20px;
     line-height: 1.5;
+}
+
+#intro {
+    background-color: rgb(192, 220, 137);
+}
+
+.note {
+    background-color: purple;
 }
