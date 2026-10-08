@@ -9,6 +9,10 @@ h1 {
     color: #40a8ce;
 }
 
+p.note {
+    color: white;
+}
+
 .box {
     height: 100px;
     padding: 20px;
@@ -28,5 +32,11 @@ p {
 }
 
 .note {
-    background-color: purple;
+    background-color: rgb(174, 89, 174);
 }
+
+html     { font-size: 15px; }   /* root */
+.parent  { font-size: 20px; }
+
+.em-text  { font-size: 2em; }   /* 2 × 20px (parent) = 40px */
+.rem-text { font-size: 2rem; }  /* 2 × 16px (root)   = 32px */
