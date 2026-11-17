@@ -20,18 +20,53 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition-delay: 0.5s;
         }
         div:hover {
             height: 400px;
             background-color: rgb(66, 87, 226);
             width: 400px;
         }
+
+        .box1 {
+            transition-timing-function: ease-in-out;
+        }
+
+        .box2{
+            transition-timing-function: ease-in;
+        }
+
+        .box3{
+            transition-timing-function: ease-out;
+        }
+
+        .box4{
+            transition-timing-function: linear;
+        }
+
+        .box5{
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+        }
+
+
     </style>
 </head>
 <body>
     
-    <div>
+    <div class="box1">
         Helloo!!
+    </div>
+     <div class="box2">
+        This
+    </div>
+     <div class="box3">
+        Is a
+    </div>
+     <div class="box4">
+        Transition
+    </div>
+     <div class="box5">
+        in CSS
     </div>
 </body>
 </html>
