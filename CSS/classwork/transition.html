@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div {
+            width: 600px;
+            height: 300px;
+            background-color: rgb(46, 210, 141);
+            transition: height 1s,  background-color 1s, width 1s;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div:hover {
+            height: 400px;
+            background-color: rgb(66, 87, 226);
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        Helloo!!
+    </div>
+</body>
+</html>
