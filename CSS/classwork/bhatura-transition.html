@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-family: sans-serif;
+  }
+
+  /* Parent Grid Container */
+  .grid-logo {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    gap: 6px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  /* Individual Yellow Tiles */
+  .tile {
+    height: 50px;
+    background-color: #236bdf;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Smooth animation both in and out */
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  /* Scatter each tile differently when hovering over the parent */
+  .grid-logo:hover .tile:nth-child(1) { transform: translate(-40px, 20px) rotate(-15deg); }
+  .grid-logo:hover .tile:nth-child(2) { transform: translate(-20px, -70px) rotate(12deg); }
+  .grid-logo:hover .tile:nth-child(3) { transform: translate(30px, -60px) rotate(-10deg); }
+  .grid-logo:hover .tile:nth-child(4) { transform: translate(90px, -30px) rotate(20deg); }
+  .grid-logo:hover .tile:nth-child(5) { transform: translate(-90px, 40px) rotate(18deg); }
+  .grid-logo:hover .tile:nth-child(6) { transform: translate(-30px, 65px) rotate(-14deg); }
+  .grid-logo:hover .tile:nth-child(7) { transform: translate(25px, 75px) rotate(10deg); }
+  .grid-logo:hover .tile:nth-child(8) { transform: translate(85px, 45px) rotate(-22deg); }
+</style>
+</head>
+<body>
+
+  <div class="grid-logo">
+    <div class="tile">B</div>
+    <div class="tile">H</div>
+    <div class="tile">A</div>
+    <div class="tile">T</div>
+    <div class="tile">U</div>
+    <div class="tile">R</div>
+    <div class="tile">A</div>
+    <div class="tile">!</div>
+  </div>
+
+</body>
+</html>
