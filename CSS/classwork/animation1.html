@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <style>
+        .light {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: gray;
+            margin: 15px;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+
+        .red {
+            animation-name: red-glow;
+        }
+
+        .yellow {
+            animation-name: yellow-glow;
+            animation-delay: 2s;
+        }
+
+        .green {
+            animation-name: green-glow;
+            animation-delay: 4s;
+        }
+
+        @keyframes red-glow {
+            0%, 30%   { background-color: red; }
+            31%, 100% { background-color: gray; }
+        }
+
+        @keyframes yellow-glow {
+            0%, 30%   { background-color: yellow; }
+            31%, 100% { background-color: gray; }
+        }
+
+        @keyframes green-glow {
+            0%, 30%   { background-color: limegreen; }
+            31%, 100% { background-color: gray; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Traffic Light</h1>
+    <div class="light red"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+</body>
+</html>

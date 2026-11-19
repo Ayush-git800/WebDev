@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Animation</title>
+    <style>
+        .pacman {
+            width: 0px;
+            height: 0px;
+            position: relative;
+            border-right: 60px solid transparent;
+            border-top: 60px solid yellow;
+            border-left: 60px solid yellow;
+            border-bottom: 60px solid yellow;
+            border-radius: 60px;
+            animation-name: chomp;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes chomp {
+            0%   { left: 0px;   border-right-color: transparent; }
+            15%  { left: 100px; border-right-color: yellow; }
+            30%  { left: 200px; border-right-color: transparent; }
+            45%  { left: 300px; border-right-color: yellow; }
+            60%  { left: 400px; border-right-color: transparent; }
+            75%  { left: 500px; border-right-color: yellow; }
+            100% { left: 650px; border-right-color: transparent; }
+        }
+    </style>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>Pac-Man</h1>
+    <div class="pacman"></div>
+</body>
+</html>
