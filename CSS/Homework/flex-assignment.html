@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+      .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        width: 300px;
+        border: 1px solid black ;
+        box-sizing: border-box;
+      }
+
+      .container > div {
+        flex: 0 0 calc(50% - 5px);
+        padding: 20px 0;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        box-sizing: border-box;
+      }
+
+      .container > div:nth-child(odd){
+        background-color: skyblue;
+      }
+
+      .container > div:nth-child(even){
+        background-color: darkorange;
+      }
+      </style>
+</head>
+<body>
+  <div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    </div>
+</body>
+</html>
